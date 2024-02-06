@@ -1,0 +1,192 @@
+/* Réinitialisation des styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #007bff, #00ffcc);
+  z-index: -1;
+  animation: animateBackground 20s infinite;
+}
+
+@keyframes animateBackground {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: transparent;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  margin-bottom: 20px;
+  font-size: 3em;
+  color: #fff;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #00ffcc;
+}
+
+.container {
+  padding: 20px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #fff;
+  text-align: center;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-info {
+  text-align: center;
+}
+
+.project-info h3 {
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.project-info p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.project-info a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.project-info a:hover {
+  color: #00ffcc;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+footer p {
+  margin: 0;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #00ffcc;
+}
